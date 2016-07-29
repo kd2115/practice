@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+</script>
+	<title>Bootstrap beign</title>
+	<meta name="viewport" content="width=devive-width, initial-scale=1.0">
+	<!-- Bootstrap-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--[if it IE 9]>
+	 <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	 <![endif]-->
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">My project</a>
+    </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#">Contact</a>
+
+
+    </div><!-- /.navbar-collapse -->
+   </div>
+  </nav>
+  <div class="container">
+     <div class="row">
+     <div class="col-sm-9">
+     <p class="pull-right visible-xs">
+     <button class="btn-xs btn btn-primary">Toggle</button></p>
+    <div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p>CYk's first bootstrap project</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Know more about me</a></p>
+</div>
+<div class="row">
+     <div class="col-6 col-sm-6 col-lg-4">
+        <h2>New start</h2>
+        <p>Stadying hard</p>
+        <a class="btn btn-default">0.0</a>
+          </div>
+          <div class="col-6 col-sm-6 col-lg-4">
+        <h2>New start</h2>
+        <p>Stadying hard</p>
+        <a class="btn btn-default">0.0</a>
+          </div>
+          <div class="col-6 col-sm-6 col-lg-4">
+        <h2>New start</h2>
+        <p>Stadying hard</p>
+        <a class="btn btn-default">0.0</a>
+          </div>
+          <div class="col-6 col-sm-6 col-lg-4">
+        <h2>New start</h2>
+        <p>Stadying hard</p>
+        <a class="btn btn-default">0.0</a>
+          </div>
+          <div class="col-6 col-sm-6 col-lg-4">
+        <h2>New start</h2>
+        <p>Stadying hard</p>
+        <a class="btn btn-default">0.0</a>
+          </div>
+          <div class="col-6 col-sm-6 col-lg-4">
+        <h2>New start</h2>
+        <p>Stadying hard</p>
+        <a class="btn btn-default">0.0</a>
+          </div>
+
+ </div></div>
+     <div class="col-sm-3">
+  <ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+</div>
+</div>
+<div style="text-algin:center;margin-top:30px">
+   <button onclick="playpause()">播放/暂停</button>
+   <button onclick="makeBig()">大</button>
+   <button onclick="makeNormal()">中</button>
+   <button onclick="makeSmall()">小</button><br/>
+   <video id="video1" width="600" style="margin-top:30px">
+    <source src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" type="video/mp4"/>
+    your browser doer not support it.
+   </video>
+</div>
+<script type="text/javascript">
+      var myVideo=document.getElementById("video1");
+
+      function playpause() {
+        if (myVideo.paused)
+          myVideo.play();
+        else
+          myVideo.pause();
+        // body...
+      }
+      function makeBig(){
+        myVideo.width=720;
+      }
+      function makeNormal(){
+        myVideo.width=480;
+      }
+      function makeSmall(){
+        myVideo.width=360;
+      }
+</script>
+
+
+</nav>
+</body>
+</html>
