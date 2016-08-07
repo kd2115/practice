@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>my images</title>
+</head>
+<body>
+<style type="text/css">
+body{
+	font-family: "Helvetica","Arial",serif;
+	color: #333;
+	background-color: #CCC;
+	margin: 1em 10%;
+}
+h1{
+	color: #111;
+	background-color: transparent;
+}
+a{
+	color: #c60;
+	background-color: transparent;
+	font-weight:bold;
+	text-decoration:none;
+}
+ul{
+	padding:0;
+}
+li{
+	float: left;
+	padding: 1em;
+	list-style: none;
+}
+img{
+	display: block;
+	clear: both;
+}
+
+
+
+
+
+</style>
+   <h1>IMG SHOW</h1>
+   <ul>
+      <li><a href="img1.jpg" onclick="showPic(this);return false" title="shine li" >img1</a></li>
+      <li><a href="img2.jpg" onclick="showPic(this);return false" title="dolaAmo">img2</a></li>
+      <li><a href="img3.jpg" onclick="showPic(this);return false" title="laofang">img3</a></li>
+      <li><a href="img4.jpg" onclick="showPic(this);return false" title="kobe girl">img4</a></li>
+   </ul>
+   <img id="placeholder" src="placeholder.jpg" alt="my image"/>
+   <p id="description">choose one</p>
+<script type="text/javascript">
+function showPic(whichpic) {
+	var source = whichpic.getAttribute("href");
+	var placeholder = document.getElementById('placeholder');
+	placeholder.setAttribute("src",source);
+	var text=whichpic.getAttribute("title");
+	var description=document.getElementById("description")
+	description.firstChild.nodeValue=text;
+}
+
+</script>
+
+</body>
+</html>
